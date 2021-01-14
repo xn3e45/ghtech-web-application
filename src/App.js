@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import {Login} from "./Components/Login.js";
+import MyNetwork from './Components/MyNetwork';
+import Messaging from './Components/Messaging';
+
 
 import './App.css';
 
@@ -22,6 +25,8 @@ class App extends Component {
 
                     </nav>
                     <Route path="/" exact component={Login}/>
+                    <Route path="/mynetwork" component={MyNetwork}/>
+                    <Route path="/messaging" component={Messaging}/>
                 </Router>
             </div>
         );
